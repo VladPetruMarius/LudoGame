@@ -9,224 +9,301 @@
 //---------------------------------------------------------------------------
 TPanel* Square::GiveSquare(int position)
 {
+        TPanel* panelSquare = NULL;
 //---------------------Traseu urmat de jucatori------------------------------
 
+      switch(position)
+      {
 //---------------------Pozitia de start a jucatorului albastru---------------
-        if(position==0)
-        return formLudo->panelSquare0;
-
-        else if(position==1)
-        return formLudo->panelSquare1;
-        else if(position==2)
-        return formLudo->panelSquare2;
-        else if(position==3)
-        return formLudo->panelSquare3;
-        else if(position==4)
-        return formLudo->panelSquare4;
-        else if(position==5)
-        return formLudo->panelSquare5;
-        else if(position==6)
-        return formLudo->panelSquare6;
-        else if(position==7)
-        return formLudo->panelSquare7;
-        else if(position==8)
-        return formLudo->panelSquare8;
-        else if(position==9)
-        return formLudo->panelSquare9;
-        else if(position==10)
-        return formLudo->panelSquare10;
-        else if(position==11)
-        return formLudo->panelSquare11;
-        else if(position==12)
-        return formLudo->panelSquare12;
+        case 0:
+          panelSquare =  formLudo->panelSquare0;
+        break;
+        case 1:
+          panelSquare =  formLudo->panelSquare1;
+        break;
+        case 2:
+          panelSquare =  formLudo->panelSquare2;
+        break;
+        case 3:
+          panelSquare =  formLudo->panelSquare3;
+        break;
+        case 4:
+          panelSquare =  formLudo->panelSquare4;
+        break;
+        case 5:
+          panelSquare =  formLudo->panelSquare5;
+        break;
+        case 6:
+          panelSquare =  formLudo->panelSquare6;
+        break;
+        case 7:
+          panelSquare =  formLudo->panelSquare7;
+        break;
+        case 8:
+          panelSquare =  formLudo->panelSquare8;
+        break;
+        case 9:
+          panelSquare =  formLudo->panelSquare9;
+        break;
+        case 10:
+          panelSquare =  formLudo->panelSquare10;
+        break;
+        case 11:
+          panelSquare =  formLudo->panelSquare11;
+        break;
+        case 12:
+          panelSquare =  formLudo->panelSquare12;
+        break;
 //---------------------Pozitia de start a jucatorului galben-----------------
-        else if(position==13)
-        return formLudo->panelSquare13;
-
-        else if(position==14)
-        return formLudo->panelSquare14;
-        else if(position==15)
-        return formLudo->panelSquare15;
-        else if(position==16)
-        return formLudo->panelSquare16;
-        else if(position==17)
-        return formLudo->panelSquare17;
-        else if(position==18)
-        return formLudo->panelSquare18;
-        else if(position==19)
-        return formLudo->panelSquare19;
-        else if(position==20)
-        return formLudo->panelSquare20;
-        else if(position==21)
-        return formLudo->panelSquare21;
-        else if(position==22)
-        return formLudo->panelSquare22;
-        else if(position==23)
-        return formLudo->panelSquare23;
-        else if(position==24)
-        return formLudo->panelSquare24;
-        else if(position==25)
-        return formLudo->panelSquare25;
+        case 13:
+          panelSquare =  formLudo->panelSquare13;
+        break;
+        case 14:
+          panelSquare =  formLudo->panelSquare14;
+        break;
+        case 15:
+          panelSquare =  formLudo->panelSquare15;
+        break;
+        case 16:
+          panelSquare =  formLudo->panelSquare16;
+        break;
+        case 17:
+          panelSquare =  formLudo->panelSquare17;
+        break;
+        case 18:
+          panelSquare =  formLudo->panelSquare18;
+        break;
+        case 19:
+          panelSquare =  formLudo->panelSquare19;
+        break;
+        case 20:
+          panelSquare =  formLudo->panelSquare20;
+        break;
+        case 21:
+          panelSquare =  formLudo->panelSquare21;
+        break;
+        case 22:
+          panelSquare =  formLudo->panelSquare22;
+        break;
+        case 23:
+          panelSquare =  formLudo->panelSquare23;
+        break;
+        case 24:
+          panelSquare =  formLudo->panelSquare24;
+        break;
+        case 25:
+          panelSquare =  formLudo->panelSquare25;
+        break;
 //---------------------Pozitia de start a jucatorului verde------------------
-        else if(position==26)
-        return formLudo->panelSquare26;
-
-        else if(position==27)
-        return formLudo->panelSquare27;
-        else if(position==28)
-        return formLudo->panelSquare28;
-        else if(position==29)
-        return formLudo->panelSquare29;
-        else if(position==30)
-        return formLudo->panelSquare30;
-        else if(position==31)
-        return formLudo->panelSquare31;
-        else if(position==32)
-        return formLudo->panelSquare32;
-        else if(position==33)
-        return formLudo->panelSquare33;
-        else if(position==34)
-        return formLudo->panelSquare34;
-        else if(position==35)
-        return formLudo->panelSquare35;
-        else if(position==36)
-        return formLudo->panelSquare36;
-        else if(position==37)
-        return formLudo->panelSquare37;
-        else if(position==38)
-        return formLudo->panelSquare38;
+        case 26:
+          panelSquare =  formLudo->panelSquare26;
+        break;
+        case 27:
+          panelSquare =  formLudo->panelSquare27;
+        break;
+        case 28:
+          panelSquare =  formLudo->panelSquare28;
+        break;
+        case 29:
+          panelSquare =  formLudo->panelSquare29;
+        break;
+        case 30:
+          panelSquare =  formLudo->panelSquare30;
+        break;
+        case 31:
+          panelSquare =  formLudo->panelSquare31;
+        break;
+        case 32:
+          panelSquare =  formLudo->panelSquare32;
+        break;
+        case 33:
+          panelSquare =  formLudo->panelSquare33;
+        break;
+        case 34:
+          panelSquare =  formLudo->panelSquare34;
+        break;
+        case 35:
+          panelSquare =  formLudo->panelSquare35;
+        break;
+        case 36:
+          panelSquare =  formLudo->panelSquare36;
+        break;
+        case 37:
+          panelSquare =  formLudo->panelSquare37;
+        break;
+        case 38:
+          panelSquare =  formLudo->panelSquare38;
+        break;
 //---------------------Pozitia de start a jucatorului rosu-------------------
-        else if(position==39)
-        return formLudo->panelSquare39;
-
-        else if(position==40)
-        return formLudo->panelSquare40;
-        else if(position==41)
-        return formLudo->panelSquare41;
-        else if(position==42)
-        return formLudo->panelSquare42;
-        else if(position==43)
-        return formLudo->panelSquare43;
-        else if(position==44)
-        return formLudo->panelSquare44;
-        else if(position==45)
-        return formLudo->panelSquare45;
-        else if(position==46)
-        return formLudo->panelSquare46;
-        else if(position==47)
-        return formLudo->panelSquare47;
-        else if(position==48)
-        return formLudo->panelSquare48;
-        else if(position==49)
-        return formLudo->panelSquare49;
-        else if(position==50)
-        return formLudo->panelSquare50;
-        else if(position==51)
-        return formLudo->panelSquare51;
-
+        case 39:
+          panelSquare =  formLudo->panelSquare39;
+        break;
+        case 40:
+          panelSquare =  formLudo->panelSquare40;
+        break;
+        case 41:
+          panelSquare =  formLudo->panelSquare41;
+        break;
+        case 42:
+          panelSquare =  formLudo->panelSquare42;
+        break;
+        case 43:
+          panelSquare =  formLudo->panelSquare43;
+        break;
+        case 44:
+          panelSquare =  formLudo->panelSquare44;
+        break;
+        case 45:
+          panelSquare =  formLudo->panelSquare45;
+        break;
+        case 46:
+          panelSquare =  formLudo->panelSquare46;
+        break;
+        case 47:
+          panelSquare =  formLudo->panelSquare47;
+        break;
+        case 48:
+          panelSquare =  formLudo->panelSquare48;
+        break;
+        case 49:
+          panelSquare =  formLudo->panelSquare49;
+        break;
+        case 50:
+          panelSquare =  formLudo->panelSquare50;
+        break;
+        case 51:
+          panelSquare =  formLudo->panelSquare51;
+        break;
 //---------------------Casa jucatorului albastru-----------------------------
-
-        else if(position==52)
-        return formLudo->panelBlueHome1;
-        else if(position==53)
-        return formLudo->panelBlueHome2;
-        else if(position==54)
-        return formLudo->panelBlueHome3;
-        else if(position==55)
-        return formLudo->panelBlueHome4;
-        else if(position==56)
-        return formLudo->panelBlueHome5;
-        else if(position==57)
-        return formLudo->panelBlueHome;
-
+        case 52:
+          panelSquare =  formLudo->panelBlueHome1;
+        break;
+        case 53:
+          panelSquare =  formLudo->panelBlueHome2;
+        break;
+        case 54:
+          panelSquare =  formLudo->panelBlueHome3;
+        break;
+        case 55:
+          panelSquare =  formLudo->panelBlueHome4;
+        break;
+        case 56:
+          panelSquare =  formLudo->panelBlueHome5;
+        break;
+        case 57:
+          panelSquare =  formLudo->panelBlueHome;
+        break;
 //---------------------Casa jucatorului galben-------------------------------
-
-        else if(position==58)
-        return formLudo->panelYellowHome1;
-        else if(position==59)
-        return formLudo->panelYellowHome2;
-        else if(position==60)
-        return formLudo->panelYellowHome3;
-        else if(position==61)
-        return formLudo->panelYellowHome4;
-        else if(position==62)
-        return formLudo->panelYellowHome5;
-        else if(position==63)
-        return formLudo->panelYellowHome;
-
+        case 58:
+          panelSquare =  formLudo->panelYellowHome1;
+        break;
+        case 59:
+          panelSquare =  formLudo->panelYellowHome2;
+        break;
+        case 60:
+          panelSquare =  formLudo->panelYellowHome3;
+        break;
+        case 61:
+          panelSquare =  formLudo->panelYellowHome4;
+        break;
+        case 62:
+          panelSquare =  formLudo->panelYellowHome5;
+        break;
+        case 63:
+          panelSquare =  formLudo->panelYellowHome;
+        break;
 //---------------------Casa jucatorului verde--------------------------------
-
-        else if(position==64)
-        return formLudo->panelGreenHome1;
-        else if(position==65)
-        return formLudo->panelGreenHome2;
-        else if(position==66)
-        return formLudo->panelGreenHome3;
-        else if(position==67)
-        return formLudo->panelGreenHome4;
-        else if(position==68)
-        return formLudo->panelGreenHome5;
-        else if(position==69)
-        return formLudo->panelGreenHome;
-
+        case 64:
+          panelSquare =  formLudo->panelGreenHome1;
+        break;
+        case 65:
+          panelSquare =  formLudo->panelGreenHome2;
+        break;
+        case 66:
+          panelSquare =  formLudo->panelGreenHome3;
+        break;
+        case 67:
+          panelSquare =  formLudo->panelGreenHome4;
+        break;
+        case 68:
+          panelSquare =  formLudo->panelGreenHome5;
+        break;
+        case 69:
+          panelSquare =  formLudo->panelGreenHome;
+        break;
 //---------------------Casa jucatorului rosu---------------------------------
-
-        else if(position==70)
-        return formLudo->panelRedHome1;
-        else if(position==71)
-        return formLudo->panelRedHome2;
-        else if(position==72)
-        return formLudo->panelRedHome3;
-        else if(position==73)
-        return formLudo->panelRedHome4;
-        else if(position==74)
-        return formLudo->panelRedHome5;
-        else if(position==75)
-        return formLudo->panelRedHome;
-
+        case 70:
+          panelSquare =  formLudo->panelRedHome1;
+        break;
+        case 71:
+          panelSquare =  formLudo->panelRedHome2;
+        break;
+        case 72:
+          panelSquare =  formLudo->panelRedHome3;
+        break;
+        case 73:
+          panelSquare =  formLudo->panelRedHome4;
+        break;
+        case 74:
+          panelSquare =  formLudo->panelRedHome5;
+        break;
+        case 75:
+          panelSquare =  formLudo->panelRedHome;
+        break;
 //---------------------Baza jucatorului albastru-----------------------------
-
-        else if(position==76)
-        return formLudo->panelBlueBase1;
-        else if(position==77)
-        return formLudo->panelBlueBase2;
-        else if(position==78)
-        return formLudo->panelBlueBase3;
-        else if(position==79)
-        return formLudo->panelBlueBase4;
-
+        case 76:
+          panelSquare =  formLudo->panelBlueBase1;
+        break;
+        case 77:
+          panelSquare =  formLudo->panelBlueBase2;
+        break;
+        case 78:
+          panelSquare =  formLudo->panelBlueBase3;
+        break;
+        case 79:
+          panelSquare =  formLudo->panelBlueBase4;
+        break;
 //---------------------Baza jucatorului galben-------------------------------
-
-        else if(position==80)
-        return formLudo->panelYellowBase1;
-        else if(position==81)
-        return formLudo->panelYellowBase2;
-        else if(position==82)
-        return formLudo->panelYellowBase3;
-        else if(position==83)
-        return formLudo->panelYellowBase4;
-
+        case 80:
+          panelSquare =  formLudo->panelYellowBase1;
+        break;
+        case 81:
+          panelSquare =  formLudo->panelYellowBase2;
+        break;
+        case 82:
+          panelSquare =  formLudo->panelYellowBase3;
+        break;
+        case 83:
+          panelSquare =  formLudo->panelYellowBase4;
+        break;
 //---------------------Baza jucatorului verde--------------------------------
-
-        else if(position==84)
-        return formLudo->panelGreenBase1;
-        else if(position==85)
-        return formLudo->panelGreenBase2;
-        else if(position==86)
-        return formLudo->panelGreenBase3;
-        else if(position==87)
-        return formLudo->panelGreenBase4;
-
+        case 84:
+          panelSquare =  formLudo->panelGreenBase1;
+        break;
+        case 85:
+          panelSquare =  formLudo->panelGreenBase2;
+        break;
+        case 86:
+          panelSquare =  formLudo->panelGreenBase3;
+        break;
+        case 87:
+          panelSquare =  formLudo->panelGreenBase4;
+        break;
 //---------------------Baza jucatorului rosu---------------------------------
-
-        else if(position==88)
-        return formLudo->panelRedBase1;
-        else if(position==89)
-        return formLudo->panelRedBase2;
-        else if(position==90)
-        return formLudo->panelRedBase3;
-        else
-        return formLudo->panelRedBase4;
+        case 88:
+          panelSquare =  formLudo->panelRedBase1;
+        break;
+        case 89:
+          panelSquare =  formLudo->panelRedBase2;
+        break;
+        case 90:
+          panelSquare =  formLudo->panelRedBase3;
+        break;
+        case 91:
+          panelSquare =  formLudo->panelRedBase4;
+        break;
+      }
+      return panelSquare;
 }
 
 void Square::AddPiece(TImage* piece, int position)
